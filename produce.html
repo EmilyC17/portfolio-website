@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Home</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
-<body style="background-color:#abd3e3;">
+  <body style="background-color:#594C83;">
     <header>
     <!--header section-->
     <div>
-      <img src="img/my-logo.png" alt="Emily Jones">
-    <nav>
+    <img src="img/my-logo.png" alt="Emily Jones">
+  </div>
+    <div>
+      <nav>
       <ul>
-      <a href="index.html">My Designs</a>
-      <a href="about-Emily Jones.html">About</a>
-      <a href="#">Contact</a>
+      <li><a href="index.html">My Designs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    </nav>
+      </nav>
     </div>
-    <main>
-      <div>
-      <picture>
+  </header>
+    <!--header section-->
+    <div>
+    <img src="img/my-logo.png" alt="Emily Jones">
+  </div>
+    <div>
+      <nav>
+      <ol>
+      <li><a href="index.html">My Designs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+      </nav>
+    </div>
+  </header>
+  <main>
+<!--Overview-->
+          <div>
+           <div class="container">
          <img src="img/produce-cover.png" alt="Bill-split app">
-       </picture>
        <h2> Overview </h2>
        <p> PROduce is a responsive web application designed to help users find recipes suited to their daily lives and are quick and easy to make. </p>
        <h2> The Process </h2>
-      <picture>
         <img src="img/work-produce/01-overview.png" alt="Bill-split app">
-      </picture>
+    </div>
+  </div>
+<!--Problems & solutions-->
+      <div>
+       <div class="container">
       <h2> Problems </h2>
       <p> As time goes on, apps and websites dedicated to helping people prep and cook food have become extremely widespread.Frequent problems that users face include:</p>
-      <ul>
+      <ol>
       <li>
         Meals taking too long to cook
       </li>
@@ -42,10 +65,10 @@
       <li>
         Text and instructions too hard to follow
       </li>
-    </ul>
+    </ol>
       <h2> Solutions </h2>
       <p> To improve the overall process for users, the app needs to contain solutions to the common problems: </p>
-      <ul>
+      <ol>
       <li>
         Information next to the recipe title containing cooking time and serving amounts
       </li>
@@ -55,30 +78,33 @@
       <li>
         Clear step by step instructions for users to follow
       </li>
-    </ul>
+    </ol>
+  </div>
+</div>
+<!--Competitive Analysis-->
+    <div>
+     <div class="container">
     <h2> Competitive Analysis </h2>
     <h3> Kitchen Stories </h3>
     <p> Strengths </p>
-    <ul>
+    <ol>
     <li>
       Like, save and review recipes
     </li>
     <li>
       Continuously updated library
     </li>
-  </ul>
+  </ol>
   <p> Weaknesses </p>
-  <ul>
+  <ol>
   <li>
   Users should be able to save or bookmark recipes
   </li>
-</ul>
-<picture>
+</ol>
    <img src="img/work-produce/02-competitive-analysis-1.png" alt="Bill-split app">
- </picture>
 <h3> Forks over knives </h3>
 <p> Strengths </p>
-<ul>
+<ol>
 <li>
   Dietary preferances
 </li>
@@ -94,64 +120,85 @@ Recipes are too complex
 <li>
 Prep and cook time not included
 </li>
-</ul>
-<picture>
+</ol>
    <img src="img/work-produce/03-competitive-analysis-2.png" alt="Bill-split app">
- </picture>
-<h2> User Personas </h2>
-      <picture>
-        <img src="img/work-produce/04-user-personas.png" alt="Bill-split app">
-      </picture>
+ </div>
+  </div>
+<!--JTBD and Feature requirements-->
+        <div>
+         <div class="container">
+      <h2> JTBD and Feature requirements </h2>
+      <p>I was able to better understand the users goals by using the Jobs To Be Done method. I narrowed down the types of functions they wished were available based on wants and needs. I then chose the most necessary features to implement in my app.
+        <ol>
+        <li>
+          A bookmark or save function to keep track of recipes and a library where they can access the ones they've saved.
+        </li>
+        <li>
+          A meal planner for families who decide in advance what they're going to cook based on calendar date.
+        </li>
+        <li>
+         The option to add ingredients from a recipe to a shopping list. This stops users from forgetting items they need when shopping. This feature will include a conversion switch to help with measurements.
+        </li>
+      </ol>
+      </div>
+    </div>
+    <br>
+<!--User personas-->
+  <div>
+    <div class="container">
+    <h2> User Personas </h2>
+      <img src="img/work-produce/04-user-personas.png" alt="Bill-split app">
+    </div>
+  </div>
+<!--Style guide-->
+    <div>
+     <div class="container">
       <h2> Style guide </h2>
-      <picture>
          <img src="img/work-produce/05-style-guide.png" alt="Bill-split app">
-       </picture>
+     </div>
+   </div>
+<!--Userflow diagram-->
+       <div>
+        <div class="container">
        <h2> User flow Diagram </h2>
        <p> Users can access recipes without creating an account, however an account is required to use other features such as shopping lists, meal planners etc. </p>
-      <picture>
         <img src="img/work-produce/06-userflow-diagram.png" alt="Bill-split app">
-      </picture>
+    </div>
+  </div>
+<!--Wireframes-->
+      <div>
+       <div class="container">
       <h2> Wireframes- Browse screen </h2>
-      <picture>
         <img src="img/work-produce/07-wireframes.png" alt="Bill-split app">
-      </picture>
       <h2> Wireframes- Recipe screen </h2>
-      <picture>
         <img src="img/work-produce/08-wireframes-2.png" alt="Bill-split app">
-      </picture>
+    </div>
+  </div>
+  <!--Mockups-->
+      <div>
+       <div class="container">
       <h2> Mockups </h2>
       <h2> A recipe app for the foodie in you </h2>
-      <picture>
         <img src="img/work-produce/09-mockup.png" alt="Bill-split app">
-      </picture>
       <h2> Choose a category to get started or search for what you fancy </h2>
-      <picture>
         <img src="img/work-produce/10-mockup.png" alt="Bill-split app">
-      </picture>
       <h2> Protect your account with code authentication </h2>
-      <picture>
         <img src="img/work-produce/11-mockup.png" alt="Bill-split app">
-      </picture>
       <h2> Save and plan your favourite meals and add ingredients to your shopping list </h2>
-      <picture>
         <img src="img/work-produce/12-mockup.png" alt="Bill-split app">
-      </picture>
       <h2> Follow recipes step by step </h2>
-      <picture>
         <img src="img/work-produce/13-mockup.png" alt="Bill-split app">
-      </picture>
       <h2> Available on multiple devices </h2>
-      <picture>
         <img src="img/work-produce/14-mockup.png" alt="Bill-split app">
-      </picture>
     </div>
+  </div>
     </main>
-  <footer>
+  <footer id="contact">
     <div>
     <h2>Get in touch</h2>
     <p>If you like my work and are interested in working with me then please reach out! Or check out my social media to see my other projects. </p>
     <div><!--Contact me-->
-      <a href="mailto:emilycjones1701@gmail.com">Email me</a>
+      <a href="mailto:emilycjones1701@gmail.com"class="button">Email me</a>
     </div>
     <br>
     <div>

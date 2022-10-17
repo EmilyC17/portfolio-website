@@ -4,20 +4,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Home</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body style="background-color:#abd3e3;">
+  <body style="background-color:#594C83;">
     <header>
     <!--header section-->
     <div>
-      <img src="img/my-logo.png" alt="Emily Jones">
-    <nav>
+    <img src="img/my-logo.png" alt="Emily Jones">
+  </div>
+    <div>
+      <nav>
       <ul>
-      <a href="index.html">My Designs</a>
-      <a href="about-Emily Jones.html">About</a>
-      <a href="#">Contact</a>
+      <li><a href="index.html">My Designs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    </nav>
+      </nav>
     </div>
   </header>
   <main>
@@ -30,9 +35,7 @@
     <div class="container">
       <h2>My work</h2>
   <div><!-- open first column -->
-   <picture>
     <img class="herdle-cover.png" src="img/herdle-cover.png" alt="Bill-split app">
-    </picture>
   </div><!-- end first column -->
   <div><!-- open second column-->
     <h3>Covering the cost- Herdle (Navtive mobile app- iOS/ Android)</h3>
@@ -40,33 +43,31 @@
 split bills between groups. It's primarily centred around
 sending payments and receiving notifications to keep track of
 their expenditure. Made for Career Foundry's UI Design course.</p>
-<nav>
-  <a href="herdle.html">Read more</a>
-</nav>
+  <a href="herdle.html" class="button"> Learn more about Herdle</a>
 </div>
 <br>
 <div><!-- open first column -->
- <picture>
     <img src="img/produce-cover.png" alt="Recipe app">
-  </picture>
-</div><!-- end first column -->
+</div>
 <div><!-- open second column-->
   <h3>Cooking the meals you love- PROduce (Responsive Web application)</h3>
   <p>PROduce is designed to help users find
 recipes suited to their daily lives and are quick and easy to make. Made for Career Foundry's UI Design course.</p>
-<nav>
-<a href="produce.html">Read more</a>
-</nav>
+<a href="produce.html" class="button"> Learn more about PROduce</a>
 </div>
 </div>
 </div>
 </main>
-<footer>
+<!--Contact me-->
+<footer id="contact">
   <div>
+    <div>
   <h2>Get in touch</h2>
+   </div>
   <p>If you like my work and are interested in working with me then please reach out! Or check out my social media to see my other projects. </p>
-  <div><!--Contact me-->
-    <a href="mailto:emilycjones1701@gmail.com">Email me</a>
+<!--Contact info-->
+  <div>
+    <a href="mailto:emilycjones1701@gmail.com" class="button">Email me</a>
   </div>
   <br>
   <div>
