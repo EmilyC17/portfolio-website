@@ -4,27 +4,59 @@ Primary Color (Light Purple): #7170B4;
  Main Background colour (Dark Purple): #594C83;
 */
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  border-bottom: 3px solid #594C83;
+  box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.4);
+  position: fixed;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.social {
+  max-width: 50px;
+}
+
+body {
+  background-color: #594C83;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+main {
+  padding-top: 261px;
 }
 
 h1 {
   color: #fff;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
-  line-height: 1.6;
-  margin: 10px;
+  line-height: 1.4;
 }
 
 h2 {
   color: #fff;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 1.6;
-  margin: 10px;
+  line-height: 1.4;
 }
 
 h3 {
@@ -32,8 +64,7 @@ h3 {
   font-family: 'Comfortaa', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.6;
-  margin: 10px;
+  line-height: 1.4;
 }
 
 p {
@@ -41,16 +72,26 @@ p {
   font-family: 'open sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
-  margin: 10px;
+  line-height: 1.4;
 }
 
-nav {
+nav > ul {
+  list-style-type: none;
   display: flex;
-  align-items: center;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
   width: 100%;
-  height: 100px;
-  background-color: #fff;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #594C83;
 }
 
 ol {
@@ -60,9 +101,13 @@ ol {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  margin: 20px;
+  padding: 0 20px;
+  width: 100%
 }
 
+img {
+  width: 100%
+}
 
 .button {
   text-decoration: none;
@@ -72,11 +117,185 @@ ol {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #594C83;
+  border-bottom: 2px solid #565656;
   transition: 0.2s opacity;
   margin-left: 20px;
 }
+
 .button:hover {
   opacity: 0.6;
   text-decoration: none;
+}
+
+/* Layout styling */
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+/* Hero section */
+#hero {
+    display: inline-block;
+  background-color: #fff;
+  padding: 20px 0;
+  width: 100%
+}
+
+#hero h1 {
+  color: #594C83;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 0.67em 0;
+  margin: 0;
+}
+
+/* Work section */
+#work {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+}
+
+/* Contact */
+
+#contact {
+    display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* About page */
+
+#about-me {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+/* Herdle*/
+
+#herdle-overview {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-problems {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-userflow {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-user-stories {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-wireframes {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-styleguide {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#herdle-mockups {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+/* Produce*/
+
+#produce-overview {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-problems {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-analysis {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-jtbd {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-personas {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-styleguide {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-userflow {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-wireframes {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
+
+#produce-mockups {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
 }

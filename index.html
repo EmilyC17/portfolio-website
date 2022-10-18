@@ -9,13 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body style="background-color:#594C83;">
+  <body>
     <header>
     <!--header section-->
     <div>
-    <img src="img/my-logo.png" alt="Emily Jones">
-  </div>
-    <div>
+      <div class="container">
+    <img class="logo" src="img/my-logo.png" alt="Emily Jones">
       <nav>
       <ul>
       <li><a href="index.html">My Designs</a></li>
@@ -24,20 +23,23 @@
     </ul>
       </nav>
     </div>
+  </div>
   </header>
   <main>
     <!--hero section-->
+    <div id="hero">
     <div class="container">
       <h1>Hi, I’m Emily! <span> I'm a UX/UI designer from the West Midlands- UK</span></h1>
     </div>
+  </div>
     <!--Work section-->
-  <div>
+  <div id="work">
     <div class="container">
       <h2>My work</h2>
   <div><!-- open first column -->
-    <img class="herdle-cover.png" src="img/herdle-cover.png" alt="Bill-split app">
+    <img src="img/herdle-cover.png" alt="Bill-split app">
   </div><!-- end first column -->
-  <div><!-- open second column-->
+  <div class="row"><!-- open second column-->
     <h3>Covering the cost- Herdle (Navtive mobile app- iOS/ Android)</h3>
     <p>Herdle is a native mobile application designed to help users
 split bills between groups. It's primarily centred around
@@ -49,7 +51,7 @@ their expenditure. Made for Career Foundry's UI Design course.</p>
 <div><!-- open first column -->
     <img src="img/produce-cover.png" alt="Recipe app">
 </div>
-<div><!-- open second column-->
+<div class="row"><!-- open second column-->
   <h3>Cooking the meals you love- PROduce (Responsive Web application)</h3>
   <p>PROduce is designed to help users find
 recipes suited to their daily lives and are quick and easy to make. Made for Career Foundry's UI Design course.</p>
@@ -60,7 +62,7 @@ recipes suited to their daily lives and are quick and easy to make. Made for Car
 </main>
 <!--Contact me-->
 <footer id="contact">
-  <div>
+  <div class="container">
     <div>
   <h2>Get in touch</h2>
    </div>
@@ -72,7 +74,7 @@ recipes suited to their daily lives and are quick and easy to make. Made for Car
   <br>
   <div>
     <a href="https://www.behance.net/emilyjones77" target="">
-        <img src="img/social-behance.png" alt="">
+        <img class="social" src="img/social-behance.png" alt="behance">
   </div>
   <div>
     <p>Copyright Ⓒ Emily Jones 2022</p>

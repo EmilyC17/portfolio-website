@@ -9,13 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body style="background-color:#594C83;">
+  <body>
     <header>
     <!--header section-->
     <div>
-    <img src="img/my-logo.png" alt="Emily Jones">
-  </div>
-    <div>
+      <div class="container">
+    <img class="logo" src="img/my-logo.png" alt="Emily Jones">
       <nav>
       <ul>
       <li><a href="index.html">My Designs</a></li>
@@ -24,24 +23,11 @@
     </ul>
       </nav>
     </div>
-  </header>
-    <!--header section-->
-    <div>
-    <img src="img/my-logo.png" alt="Emily Jones">
   </div>
-    <div>
-      <nav>
-      <ol>
-      <li><a href="index.html">My Designs</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ol>
-      </nav>
-    </div>
   </header>
-  <main>
+<main>
 <!--Overview-->
-          <div>
+          <div id="produce-overview">
            <div class="container">
          <img src="img/produce-cover.png" alt="Bill-split app">
        <h2> Overview </h2>
@@ -51,7 +37,7 @@
     </div>
   </div>
 <!--Problems & solutions-->
-      <div>
+      <div id="produce-problems">
        <div class="container">
       <h2> Problems </h2>
       <p> As time goes on, apps and websites dedicated to helping people prep and cook food have become extremely widespread.Frequent problems that users face include:</p>
@@ -82,7 +68,7 @@
   </div>
 </div>
 <!--Competitive Analysis-->
-    <div>
+    <div id="produce-analysis">
      <div class="container">
     <h2> Competitive Analysis </h2>
     <h3> Kitchen Stories </h3>
@@ -111,9 +97,9 @@
 <li>
   Environmentally aware
 </li>
-</ul>
+</ol>
 <p> Weaknesses </p>
-<ul>
+<ol>
 <li>
 Recipes are too complex
 </li>
@@ -125,7 +111,7 @@ Prep and cook time not included
  </div>
   </div>
 <!--JTBD and Feature requirements-->
-        <div>
+        <div id="produce-jtbd">
          <div class="container">
       <h2> JTBD and Feature requirements </h2>
       <p>I was able to better understand the users goals by using the Jobs To Be Done method. I narrowed down the types of functions they wished were available based on wants and needs. I then chose the most necessary features to implement in my app.
@@ -144,21 +130,21 @@ Prep and cook time not included
     </div>
     <br>
 <!--User personas-->
-  <div>
+  <div id="produce-personas">
     <div class="container">
     <h2> User Personas </h2>
       <img src="img/work-produce/04-user-personas.png" alt="Bill-split app">
     </div>
   </div>
 <!--Style guide-->
-    <div>
+    <div id="produce-styleguide">
      <div class="container">
       <h2> Style guide </h2>
          <img src="img/work-produce/05-style-guide.png" alt="Bill-split app">
      </div>
    </div>
 <!--Userflow diagram-->
-       <div>
+       <div id="produce-userflow">
         <div class="container">
        <h2> User flow Diagram </h2>
        <p> Users can access recipes without creating an account, however an account is required to use other features such as shopping lists, meal planners etc. </p>
@@ -166,7 +152,7 @@ Prep and cook time not included
     </div>
   </div>
 <!--Wireframes-->
-      <div>
+      <div id="produce-wireframes">
        <div class="container">
       <h2> Wireframes- Browse screen </h2>
         <img src="img/work-produce/07-wireframes.png" alt="Bill-split app">
@@ -175,7 +161,7 @@ Prep and cook time not included
     </div>
   </div>
   <!--Mockups-->
-      <div>
+      <div id="produce-mockups">
        <div class="container">
       <h2> Mockups </h2>
       <h2> A recipe app for the foodie in you </h2>
@@ -193,22 +179,26 @@ Prep and cook time not included
     </div>
   </div>
     </main>
-  <footer id="contact">
-    <div>
-    <h2>Get in touch</h2>
-    <p>If you like my work and are interested in working with me then please reach out! Or check out my social media to see my other projects. </p>
-    <div><!--Contact me-->
-      <a href="mailto:emilycjones1701@gmail.com"class="button">Email me</a>
+    <!--Contact me-->
+    <footer id="contact">
+      <div class="container">
+        <div>
+      <h2>Get in touch</h2>
+       </div>
+      <p>If you like my work and are interested in working with me then please reach out! Or check out my social media to see my other projects. </p>
+    <!--Contact info-->
+      <div>
+        <a href="mailto:emilycjones1701@gmail.com" class="button">Email me</a>
+      </div>
+      <br>
+      <div>
+        <a href="https://www.behance.net/emilyjones77" target="">
+            <img class="social" src="img/social-behance.png" alt="">
+      </div>
+      <div>
+        <p>Copyright Ⓒ Emily Jones 2022</p>
     </div>
-    <br>
-    <div>
-      <a href="https://www.behance.net/emilyjones77" target="">
-          <img src="img/social-behance.png" alt="">
     </div>
-    <div>
-      <p>Copyright Ⓒ Emily Jones 2022</p>
-  </div>
-  </div>
-  </footer>
-  </body>
-  </html>
+    </footer>
+    </body>
+    </html>
