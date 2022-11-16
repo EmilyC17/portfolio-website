@@ -4,12 +4,9 @@ Primary Color (Light Purple): #7170B4;
  Main Background colour (Dark Purple): #594C83;
 */
 
-html {
-  box-sizing: border-box;
-}
-
 header {
   display: inline-block;
+  box-sizing: border-box;
   background-color: #fff;
   text-align: center;
   width: 100%;
@@ -23,7 +20,7 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 50px;
 }
 
 .social {
@@ -40,13 +37,15 @@ body {
 }
 
 main {
-  padding-top: 261px;
+  padding-top: 170px;
 }
+
 
 h1 {
   color: #fff;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 30px;
+  font-size: 13px;
+  padding: 0px 11px;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -54,7 +53,7 @@ h1 {
 h2 {
   color: #fff;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -62,7 +61,7 @@ h2 {
 h3 {
   color: #fff;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -109,6 +108,10 @@ img {
   width: 100%
 }
 
+svg {
+  width: 100%
+}
+
 .button {
   text-decoration: none;
   display: inline-block;
@@ -120,12 +123,26 @@ img {
   border-bottom: 2px solid #565656;
   transition: 0.2s opacity;
   margin-left: 20px;
+
 }
 
 .button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
   text-decoration: none;
 }
+
+.bubble {
+  animation-duration: 4s;
+  animation-name: colour-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+            }
+
+            @keyframes colour-change {
+              from {fill: #7170B4;}
+              to {fill: #ffffff;}
+            }
 
 /* Layout styling */
 
@@ -143,14 +160,16 @@ img {
 }
 
 #hero h1 {
+  text-align: center;
   color: #594C83;
   font-family: 'Comfortaa', sans-serif;
   font-size: 30px;
   font-weight: 300;
   line-height: 1.4;
-  padding: 0.67em 0;
+  padding: 0.65em 0;
   margin: 0;
 }
+
 
 /* Work section */
 #work {
@@ -162,6 +181,7 @@ img {
 .row {
   margin: 25px 0;
 }
+
 
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #fff;
@@ -184,6 +204,12 @@ img {
   width: 100%
 }
 
+#skills-tools {
+  display: inline-block;
+  padding: 20px 0;
+  padding-bottom: 25px; border-bottom: 1px solid #fff;
+  width: 100%
+}
 /* Herdle*/
 
 #herdle-overview {
@@ -298,4 +324,64 @@ img {
   padding: 20px 0;
   padding-bottom: 25px; border-bottom: 1px solid #fff;
   width: 100%
+}
+
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 192px
+  }
+  body {
+    font-size: 18px
+  }
+  .col-md-6 {
+  width: 50%;
+ }
+ [class*="col-"] {
+  float: left;
+  padding: 10px;
+ }
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ #about-page h3 {
+  margin-top: 0;}
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-lg-7 {
+  width: 60%;
+ }
+ [class*="col-"] {
+  float: left;
+  padding: 10px;
+ }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
