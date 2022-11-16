@@ -1,8 +1,13 @@
 /*
 Colors used:
-Primary Color (Light Purple): #7170B4;
- Main Background colour (Dark Purple): #594C83;
+Primary Colour (Light Purple): #7170B4;
+Secondary Colour #3E355A;
+Main Background colour (Dark Purple): #594C83;
 */
+
+* {
+  box-sizing: border-box;
+}
 
 header {
   display: inline-block;
@@ -37,7 +42,7 @@ body {
 }
 
 main {
-  padding-top: 170px;
+  padding-top: 112px;
 }
 
 
@@ -78,19 +83,20 @@ nav > ul {
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin-bottom: 0;
 }
 
 nav > ul > li {
   display: inline-block;
-  width: 100%;
 }
 
 nav > ul > li > a {
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0 8px;
   text-transform: uppercase;
   font-weight: 700;
   color: #594C83;
+  font-size: 13px;
 }
 
 ol {
@@ -122,7 +128,6 @@ svg {
   border-radius: 3px;
   border-bottom: 2px solid #565656;
   transition: 0.2s opacity;
-  margin-left: 20px;
 
 }
 
@@ -137,33 +142,38 @@ svg {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-            }
+}
 
-            @keyframes colour-change {
-              from {fill: #7170B4;}
-              to {fill: #ffffff;}
-            }
+@keyframes colour-change {
+  from {fill: #7170B4;}
+  to {fill: #ffffff;}
+}
 
 /* Layout styling */
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0 15px;
+  margin: auto;
 }
 
 /* Hero section */
 #hero {
-    display: inline-block;
   background-color: #fff;
-  padding: 20px 0;
-  width: 100%
+  padding: 60px 0;
+}
+
+#hero span {
+  display: block;
+  font-size: 60%;
+  margin-top: 0.5em;
 }
 
 #hero h1 {
   text-align: center;
   color: #594C83;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 300;
   line-height: 1.4;
   padding: 0.65em 0;
@@ -189,10 +199,14 @@ svg {
 
 /* Contact */
 
-#contact {
-    display: inline-block;
+footer {
+  background-color: #3E355A;
   padding: 20px 0;
-  width: 100%;
+  text-align: center;
+}
+
+.Copyright p {
+  font-size: 70%
 }
 
 /* About page */
@@ -202,6 +216,10 @@ svg {
   padding: 20px 0;
   padding-bottom: 25px; border-bottom: 1px solid #fff;
   width: 100%
+}
+
+#about-me img {
+  max-width: 300px
 }
 
 #skills-tools {
@@ -338,50 +356,56 @@ svg {
     margin-top: 4px;
   }
   main {
-    padding-top: 192px
+    padding-top: 94px
   }
   body {
     font-size: 18px
   }
   .col-md-6 {
-  width: 50%;
- }
- [class*="col-"] {
-  float: left;
-  padding: 10px;
- }
- .row::after {
-   content: "";
-   clear: both;
-   display: table;
- }
- #about-page h3 {
-  margin-top: 0;}
-}
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 {
+    margin-top: 0;}
+  }
 
-@media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+    main {
+      padding-top: 94px
+    }
+    .col-lg-7 {
+      width: 60%;
+    }
+    .col-lg-5 {
+      width: 40%;
+    }
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
   }
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-  .col-lg-7 {
-  width: 60%;
- }
- [class*="col-"] {
-  float: left;
-  padding: 10px;
- }
-}
 
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
