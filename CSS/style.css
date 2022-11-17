@@ -13,12 +13,8 @@ header {
   display: inline-block;
   box-sizing: border-box;
   background-color: #fff;
-  text-align: center;
   width: 100%;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #594C83;
   box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.4);
   position: fixed;
@@ -42,7 +38,7 @@ body {
 }
 
 main {
-  padding-top: 112px;
+  padding-top: 75px;
 }
 
 
@@ -83,12 +79,9 @@ nav > ul {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
 
 nav > ul > li > a {
   text-decoration: none;
@@ -97,6 +90,31 @@ nav > ul > li > a {
   font-weight: 700;
   color: #594C83;
   font-size: 13px;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #7170B4;
+}
+.navtoggle.responsive nav {
+  padding: 20px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 ol {
@@ -350,6 +368,18 @@ footer {
     text-align: unset;
     padding: 20px 0 13px;
   }
+  nav > ul {
+  margin: 1em 0;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   nav {
     width: auto;
     float: right;
